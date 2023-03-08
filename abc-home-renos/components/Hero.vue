@@ -1,22 +1,43 @@
 <template>
   <div class="hero" >
-    <div class="hero-text">
-      <h1>ABC Home Renovations</h1>
-      <p>Let us transform your house into the dream home you've always wanted. We take care of the renovation so you can focus on enjoying the new space!</p>
-      <Button class="abc-blue"/>
+    <div class="hero-gradient">
+      <div class="hero-text">
+        <h1>ABC Home Renovations</h1>
+        <p>Let us transform your house into the dream home you've always wanted. We take care of the renovation so you can focus on enjoying the new space!</p>
+        <Button class="abc-blue"/>
+      </div>
+    </div>
+    <div class="hero-image">
     </div>
   </div>
 </template>
 
 <style scoped>
 .hero {
-  background-image: url("@/assets/images/abc-hero.jfif");
-  height: 990px;
+  height: 982px;
   align-items: center;
   display: flex;
 }
+.hero-gradient {
+  width: 75%;
+  background-image: linear-gradient(to right, white 45%, transparent);
+}
+.hero-image {
+  background-image: url(/_nuxt/assets/images/abc-hero.jfif);
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1462px;
+  height: 990px;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .hero-text {
   width: 486px;
+  background-image: linear-gradient(to right, white, transparent);
+  padding: 50% 0px;
 }
 .hero-text h1 {
   font-size: 80px;
