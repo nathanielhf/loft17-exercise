@@ -1,0 +1,19 @@
+/* Brand Colors */
+.abc-blue {
+  background-color: #213D62;
+}
+
+.abc-grey {
+  background-color: #B9B9B9;
+}
+
+.page-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
