@@ -26,10 +26,10 @@
   background-image: url(/_nuxt/assets/images/abc-hero.jfif);
   display: block;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -140px;
+  right: -60px;
   width: 1462px;
-  height: 990px;
+  height: 1130px;
   z-index: -1;
   background-size: cover;
   background-repeat: no-repeat;
