@@ -11,7 +11,7 @@ const props = defineProps<DoubleColumnProps>();
 </script>
 
 <template>
-  <div class="two-columns">
+  <div class="double-column">
     <div class="image-column">
       <slot name="image"></slot>
     </div>
@@ -34,5 +34,11 @@ const props = defineProps<DoubleColumnProps>();
   width: 678px;
   height: 642px;
   display: flex;
+}
+.text-column {
+  text-align: left;
+  margin-left: 15%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 </style>

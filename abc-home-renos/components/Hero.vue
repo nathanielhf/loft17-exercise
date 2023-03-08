@@ -49,10 +49,6 @@
   margin-bottom: 0;
 }
 .hero-text p {
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 37px;
-  letter-spacing: 0em;
   text-align: left;
 }
 .hero-image img {

@@ -36,5 +36,9 @@ img {
   max-width: 100%;
   max-height: 100%;
   width: 100%;
+  border-radius: 12px;
+}
+h2 {
+  margin-top: 0;
 }
 </style>

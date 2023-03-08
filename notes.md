@@ -26,3 +26,4 @@
 
 ### Other
 - maybe 2 columns is component
+- services doesn't need to be a component - can just be 2 doublecolumns and a carousel in the index file

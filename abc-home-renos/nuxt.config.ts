@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     head: {
       link: [
         {
-          href: "https://fonts.googleapis.com/css2?family=Inter&display=swap", 
+          href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap", 
           rel: "stylesheet",
         }
       ]
