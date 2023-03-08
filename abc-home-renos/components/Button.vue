@@ -1,19 +1,20 @@
-<script setup lang="ts">
-interface ButtonProps {
-  color?: string
-}
-
-const props = defineProps<ButtonProps>();
-</script>
-
 <template>
-  <div class="button abc-blue"></div>
+  <div></div>
 </template>
 
 <style scoped>
-.button {
+.abc-blue {
   width: 188px;
   height: 56px;
   border-radius: 12px;
+  background-color: #213D62;
 }
+
+.abc-grey {
+  width: 173px;
+  height: 63px;
+  border-radius: 12px;
+  background-color: #B9B9B9;
+}
+
 </style>

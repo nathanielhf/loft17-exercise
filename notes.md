@@ -23,3 +23,6 @@
 ### For Every Component (Actually maybe every unique page, which is just one)
 - meta information
   - can be in script but example project has in html
+
+### Other
+- maybe 2 columns is component

@@ -1,11 +1,11 @@
 /* Brand Colors */
-.abc-blue {
+/* .abc-blue {
   background-color: #213D62;
 }
 
 .abc-grey {
   background-color: #B9B9B9;
-}
+} */
 
 .page-wrapper {
   max-width: 1280px;
@@ -15,5 +15,5 @@
 
 .two-columns {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
 }
