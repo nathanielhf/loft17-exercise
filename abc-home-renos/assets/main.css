@@ -7,6 +7,11 @@
   background-color: #B9B9B9;
 } */
 
+@font-face {
+  font-family: 'Inter', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Inter&display=swap');;
+}
+
 .page-wrapper {
   max-width: 1280px;
   margin: 0 auto;

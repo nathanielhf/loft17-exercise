@@ -7,3 +7,9 @@
     <Footer />
   </div>
 </template>
+
+<style>
+  html {
+    font-family: "Inter";
+  }
+</style>
