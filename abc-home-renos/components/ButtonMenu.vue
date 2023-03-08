@@ -1,12 +1,14 @@
 <template>
-  <div class="button-menu">
-    <div class="six-column">
-      <Button class="abc-grey" />
-      <Button class="abc-grey" />
-      <Button class="abc-grey" />
-      <Button class="abc-grey" />
-      <Button class="abc-grey" />
-      <Button class="abc-grey" />
+  <div style="height: 139px">
+    <div class="button-menu">
+      <div class="six-column">
+        <Button class="abc-grey" />
+        <Button class="abc-grey" />
+        <Button class="abc-grey" />
+        <Button class="abc-grey" />
+        <Button class="abc-grey" />
+        <Button class="abc-grey" />
+      </div>
     </div>
   </div>
 </template>

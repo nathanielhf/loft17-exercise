@@ -6,5 +6,6 @@
 img {
   width: 173px;
   height: 63px;
+  display: block;
 }
 </style>
