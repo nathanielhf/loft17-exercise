@@ -6,7 +6,14 @@
       <Button class="abc-blue"/>
     </div>
     <div class="hero-image">
-
+      <img src="@/assets/images/abc-hero.jfif">
     </div>
   </div>
 </template>
+
+<style scoped>
+.hero-image img {
+  width: 1462px;
+  height: 990px
+}
+</style>
