@@ -1,4 +1,4 @@
- import { indexImages } from '~~/index_images'
+ import { indexImages } from './index_images'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -15,11 +15,11 @@ export default defineNuxtConfig({
       ]
     }
   },
-  hooks: {
-    'modules:before': () => {
-      indexImages()
-    }
-  }
+  // hooks: {
+  //   'modules:before': () => {
+  //     indexImages()
+  //   }
+  // }
 })
 
 // const fs = require('fs')
