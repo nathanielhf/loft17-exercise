@@ -1,3 +1,5 @@
+ import { indexImages } from '~~/index_images'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   css: [
@@ -12,5 +14,15 @@ export default defineNuxtConfig({
         }
       ]
     }
+  },
+  hooks: {
+    'modules:before': () => {
+      indexImages()
+    }
   }
 })
+
+// const fs = require('fs')
+// To read Static Files
+// const images = fs.readdirSync('./assets/images/home-page-carousel')
+//process.env.IMAGES_HOME_CAROUSEL = images

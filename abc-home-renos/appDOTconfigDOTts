@@ -1,0 +1,7 @@
+// const fs = require('fs')
+// // To read Static Files
+// const imagesHomeCarousel = fs.readdir('./assets/images/home-page-carousel')
+
+// export default defineAppConfig({
+//   imagesHomeCarousel: imagesHomeCarousel
+// })
