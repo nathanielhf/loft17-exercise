@@ -1,21 +1,38 @@
-import fs from 'fs'
-const imageFolder = './assets/images/home-page-carousel/'
+//import fs from 'fs'
+const fs = require('fs');
+const { findSourceMap } = require('module');
 
-export function indexImages() {
+
+function indexImages() {
+    const imageFolder = './assets/images/home-page-carousel/'
     const imagesHomeCarousel = {}
-    let id = 0;
+    const imagesArray = []  
 
     fs.readdir(imageFolder, (err, files) => {
         // for each file
         files.forEach(file => {
-            imagesHomeCarousel.push(id, file)
+            // // Object.assign(imagesHomeCarousel, file)
+            // // imagesHomeCarousel.id = file
+            // // id++
+            // console.log(file)
+            // // imagesHomeCarousel.push(file.toString)
+            // let newFile = file.toString
+            imagesArray.push(file)
+            // might need path of file, probs relative: https://stackoverflow.com/questions/31317007/get-full-file-path-in-node-js
         })
         // append to json object?
         // and give it an id?
         // https://www.w3schools.com/js/js_json.asp
+        //console.log(imagesArray)
+        Object.assign(imagesHomeCarousel, imagesArray)
+        // console.log(imagesHomeCarousel)
+        const outputJSON = JSON.stringify(imagesHomeCarousel, null, 2)
+        fs.writeFile('./assets/images/images-home-carousel', outputJSON, (err) => {
+            console.log(err)
+        });
     })
 
-    fs.writeFileSync('.', imagesHomeCarousel);
+    
 //   const fs = require('fs');
 
 //   function mapFolderStructure(json) {
@@ -46,3 +63,5 @@ export function indexImages() {
 
 //   fs.writeFileSync('path/to/output', outputJson);
 }
+
+indexImages()
