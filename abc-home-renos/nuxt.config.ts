@@ -15,11 +15,11 @@ export default defineNuxtConfig({
       ]
     }
   },
-  // hooks: {
-  //   'modules:before': () => {
-  //     indexImages()
-  //   }
-  // }
+  hooks: {
+    'ready': () => {
+      indexImages()
+    }
+  }
 })
 
 // const fs = require('fs')

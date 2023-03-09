@@ -9,7 +9,7 @@ import '@splidejs/vue-splide/css';
 
 //const config = useRuntimeConfig() 
 
-import images from '@/assets/images-home-carousel.json'
+import images from '@/images-home-carousel.json'
 
 // interface ImageProps {
 //   index?: number;
@@ -24,7 +24,7 @@ import images from '@/assets/images-home-carousel.json'
   <Splide :options="{ rewind: true }" aria-label="Vue Splide Example">
     <SplideSlide 
       v-for="(image) in images" 
-      :src="image" 
+      :src="'/images/home-page-carousel/' + image" 
     />
   </Splide>
 </template>

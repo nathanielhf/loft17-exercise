@@ -23,7 +23,7 @@
   background-image: linear-gradient(to right, white 45%, transparent);
 }
 .hero-image {
-  background-image: url(/_nuxt/assets/images/abc-hero.jfif);
+  background-image: url("@/images/abc-hero.jfif");
   display: block;
   position: absolute;
   top: -140px;

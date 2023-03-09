@@ -11,7 +11,7 @@
         <p>Our experienced professionals have years of experience and a passion for excellence when it comes to transforming your kitchen area. We provide services such as designing and building new spaces, installing fixtures, appliances, plumbing work, electrical work, and HVAC work. With so many options available, you can trust us to handle all of your kitchen renovation needs with precision and satisfaction.</p>
       </template>
       <template #image>
-        <img src="@/assets/images/abc-kitchen.jfif">
+        <img src="@/images/abc-kitchen.jfif">
       </template>
     </DoubleColumn>
     <DoubleColumn class="reverse">
@@ -23,7 +23,7 @@
         </p>
       </template>
       <template #image>
-        <img src="@/assets/images/abc-bathroom.jfif">
+        <img src="@/images/abc-bathroom.jfif">
       </template>
     </DoubleColumn>
   </div>

@@ -1,5 +1,5 @@
 <template>
-  <img src="@/assets/images/abc-logo.png" alt="ABC Logo">
+  <img src="@/images/abc-logo.png" alt="ABC Logo">
 </template>
 
 <style scoped>

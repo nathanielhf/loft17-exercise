@@ -3,18 +3,20 @@ import path from 'path'
 // const fs = require('fs');
 
 export function indexImages() {
-  const imageFolder = './assets/images/home-page-carousel/'
+  const imageFolder = './public/images/home-page-carousel/'
   const imagesHomeCarousel = {}
   const imagesArray = []  
 
   fs.readdir(imageFolder, (err, files) => {
     files.forEach(file => {
-      imagesArray.push(path.resolve(file))
+      console.log(path.resolve(imageFolder, file))
+      imagesArray.push(path.resolve(imageFolder, file))
+      //imagesArray.push(file)
     })
 
     //Object.assign(imagesHomeCarousel, imagesArray)
 
-    const outputPath =  './assets/images-home-carousel.json'
+    const outputPath =  './images-home-carousel.json'
 
     if (fs.existsSync(outputPath))  {fs.unlinkSync(outputPath)}
 
