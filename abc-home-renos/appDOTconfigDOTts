@@ -1,9 +1,0 @@
-import { indexImages } from './index_images'
-
-export default defineAppConfig({
-  hooks: {
-    'app:created': () => {
-      indexImages()
-    }
-  }
-})
