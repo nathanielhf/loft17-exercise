@@ -1,4 +1,5 @@
 <template>
+  <h2>Services</h2>
   <div>
     <Carousel />
   </div>
