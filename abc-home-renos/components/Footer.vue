@@ -100,5 +100,6 @@ address .bigtext {
   width: 28px;
   display: inline-block;
   background-size: cover;
+  margin-left: 10px;
 }
 </style>

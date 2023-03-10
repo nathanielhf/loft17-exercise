@@ -35,6 +35,10 @@
   width: 390px;
   display: flex;
   justify-content: space-between;
-}
 
+}
+.nav-links a {
+  text-decoration: none!important;
+  color: #000000;
+}
 </style>
