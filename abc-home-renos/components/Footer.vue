@@ -6,8 +6,8 @@ const config = useAppConfig()
 <template>
   <footer>
     <Logo />
-    <div class="double-column">
-      <div>
+    <div class="footer-columns">
+      <div class="column-one">
         <h2>Like what you see?<br>Let's Talk</h2>
         <div class="social-media">
           <p>
@@ -29,7 +29,7 @@ const config = useAppConfig()
           Email:<br>
           <a href="mailto:johndoe@websitecom" class="bigtext">johndoe@websitecom</a>
         </p>
-        <p>
+        <p style="margin: 20px 0">
           Phone:<br>
           <a href="tel:555-555-5555" class="bigtext">555-555-5555</a>
         </p>
@@ -49,11 +49,19 @@ const config = useAppConfig()
 footer {
   margin: 140px 0;
 }
-footer .social-media {
-  margin-top: 20px;
+footer .column-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 footer .social-media p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 37px;
+  letter-spacing: 0em;
+  text-align: left;
   margin: 0px;
+  color: #213D62;
 }
 footer .social-media svg {
   color: #213D62
@@ -61,6 +69,29 @@ footer .social-media svg {
 footer .social-media a {
   text-decoration: none;
   margin-right: .5em;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.footer-columns h2, p {
+  margin-top: 0px;
+}
+address p {
+  margin: auto;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(33, 61, 98, 0.5);
+  font-style: normal;
+}
+address .bigtext {
+  font-size: 32px;
+  color: rgba(33, 61, 98, 1);
 }
 .bigtext::after {
   background-image: url('@/assets/right-arrow.svg');
